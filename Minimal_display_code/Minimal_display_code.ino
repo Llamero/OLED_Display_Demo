@@ -11,6 +11,9 @@
 //Functions:
 //printString(char [] or "Text") - Print text at current cursor position
 //command(byte) - Send a numerical command to display, such as move cursor, toggle display on and off, etc
+//bitbang(byte) - Sends one byte of data to the display via SPI
+//RsRW(boolean RS, boolean RW) - Sends the two header bits via SPI
+//initializeDisplay() - Send initialization sequence from datasheet: http://www.newhavendisplay.com/specs/NHD-0420DZW-AB5.pdf
 
 //Sample commands: (see datasheet for full list)
 //1 - Clear display
