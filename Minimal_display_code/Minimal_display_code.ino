@@ -1,5 +1,6 @@
 //This code was written by Benjamin Smith
-//It is publically available at: 
+//It is publically available at: https://github.com/Llamero/OLED_Display_Demo
+//This is open-source and licensed under Apache 2.0 https://www.apache.org/licenses/LICENSE-2.0
 
 //WIRING:
 //Pin 9 - Display CS
