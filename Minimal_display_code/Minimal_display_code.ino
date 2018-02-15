@@ -21,7 +21,7 @@
 
 const uint8_t d = 2; //ms delay for display SPI between commands
 const char arrow[] = {B11110110, '\0'}; //Draw special arrow character.  '\0' is needed to keep as valid str->char array.
-uint8_t a = 0; //Counter for loop
+uint8_t a = 0; //Counter for indexing arrows in loop
 
 
 void setup() {
@@ -44,6 +44,7 @@ void setup() {
 
 //Raster arrows across display
 void loop() {
+    //Draw arrows
     command(128 + 0x0E + a); //Move cursor
     printStr(arrow); //print arrow character
     command(128 + 0x4e + a); //Move cursor
@@ -67,7 +68,7 @@ void loop() {
 
     //Increment counter
     a++;
-    if(a==6) a = 0;
+    if(a==6) a=0;
 }
 
 //Function for sending bytes via SPI
